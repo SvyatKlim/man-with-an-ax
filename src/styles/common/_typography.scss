@@ -1,0 +1,119 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+b {
+  color: $black;
+}
+
+h1, h2, h3 {
+  margin: 0 0 30px;
+}
+
+p {
+  margin: 0;
+}
+
+h1, .h1 {
+  font-family: $montserrat;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.36;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+h2, .h2 {
+  font-family: $montserrat;
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+h3, .h3 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.38;
+}
+
+h4, .h4 {
+  font-family: $montserrat;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.54;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+h5, .h5 {
+  font-family: $montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.54;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.btn, button {
+  font-family: $montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-transform-none {
+  text-transform: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media screen and (max-width: 1250px) {
+}
+
+@media screen and (max-width: 1024px) {
+  h1, .h1 {
+    font-size: 30px;
+  }
+  h2, .h2 {
+    font-size: 26px;
+  }
+  h3, .h3 {
+    font-size: 22px;
+  }
+  .h4, h4{
+    font-size: 18px;
+  }
+  .h5, h5{
+    font-size: 14px;
+  }
+  h3, h4, h5, h6 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1, .h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h3, .h3 {
+    font-size: 16px;
+  }
+}
