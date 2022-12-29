@@ -15,7 +15,7 @@ const gulp = require('gulp'),
 
 const paths = {
     html: {
-        src: ['layout/index.html'],
+        src: ['layout/index.html','layout/**/*.html'],
     },
     styles: {
         src: ['src/styles/**/*.scss', 'src/styles/**/*.css'],

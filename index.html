@@ -6,11 +6,272 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/vendor/normalize.min.css">
+    <link rel="stylesheet" href="./assets/libs/bootstrap5/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/styles.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-<header> <h2>Hello I am Header</h2></header>
-<h1>Hello I am HTML page</h1>
+<header class="fixed-top header">
+    <!--    <div class="header__container">-->
+    <!--        <a href="./" class="logo">-->
+    <!--            <img src="./assets/images/picture/god-of-war-logo.png" alt="main logo">-->
+    <!--        </a>-->
+    <!--        <div class="header__decor">-->
+    <!--            <img src="" alt="">-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <nav class="navbar navbar-expand-lg header__nav" aria-label="Main navigation">
+        <div class="container-fluid d-lg-flex justify-content-between">
+            <a class="navbar-brand d-flex" href="./">
+                <img src="./assets/images/picture/god-of-war-logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="header__nav__decor d-flex">
+                <svg width="300" height="62" viewBox="0 0 300 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_224_405)">
+                        <path d="M286.186 13.3761C281.054 19.9046 275.921 26.4335 270.789 32.962C270.524 33.2984 270.688 33.7014 270.938 33.987C276.07 39.8726 281.202 45.7578 286.335 51.643C287.086 52.5046 288.422 51.2976 287.68 50.4468C282.548 44.5613 277.415 38.676 272.283 32.7908C272.332 33.1326 272.382 33.4743 272.432 33.8158C277.564 27.2873 282.696 20.7584 287.829 14.2299C288.534 13.3335 286.883 12.4892 286.186 13.3761Z" fill="#5092D2"/>
+                        <path d="M233.139 52.7222C241.503 44.2203 249.867 35.7183 258.231 27.2163C258.58 26.8624 258.605 26.3717 258.231 26.0201C254.059 22.1006 249.887 18.1807 245.715 14.2612C245.365 13.9316 244.721 13.9346 244.37 14.2612C240.158 18.1807 235.944 22.1006 231.731 26.0201C231.356 26.3693 231.383 26.8644 231.731 27.2163C240.137 35.7183 248.542 44.2203 256.948 52.7222C257.759 53.5432 259.099 52.3419 258.293 51.526C249.887 43.024 241.482 34.5221 233.077 26.0201C233.077 26.4187 233.077 26.8177 233.077 27.2163C237.289 23.2968 241.503 19.3769 245.715 15.4574C245.267 15.4574 244.819 15.4574 244.37 15.4574C248.542 19.3769 252.714 23.2968 256.886 27.2163C256.886 26.8177 256.886 26.4187 256.886 26.0201C248.522 34.5221 240.158 43.024 231.793 51.526C230.989 52.3429 232.329 53.5448 233.139 52.7222Z" fill="#5092D2"/>
+                        <path d="M129.365 13.8182C129.365 26.2851 129.365 38.7519 129.365 51.2184C129.365 52.3097 131.268 52.3097 131.268 51.2184C131.268 38.7516 131.268 26.2847 131.268 13.8182C131.268 12.7273 129.365 12.7273 129.365 13.8182Z" fill="#5092D2"/>
+                        <path d="M121.176 28.1026C127.52 31.6695 133.864 35.2361 140.208 38.8027C141.249 39.3878 142.202 37.9229 141.168 37.3419C134.824 33.775 128.48 30.2084 122.136 26.6418C121.095 26.0567 120.142 27.5216 121.176 28.1026Z" fill="#5092D2"/>
+                        <path d="M78.6247 15.2837C86.533 27.7082 94.4408 40.1331 102.349 52.5577C102.953 53.5069 104.597 52.6545 103.992 51.704C96.0839 39.2794 88.176 26.8545 80.2678 14.4299C79.6639 13.4804 78.0197 14.3328 78.6247 15.2837Z" fill="#5092D2"/>
+                        <path d="M102.349 14.4292C94.4412 26.8538 86.5334 39.2787 78.6247 51.7033C78.0197 52.6541 79.6635 53.5065 80.2678 52.557C88.1757 40.1324 96.0836 27.7075 103.992 15.283C104.597 14.3325 102.953 13.4801 102.349 14.4292Z" fill="#5092D2"/>
+                        <path d="M51.4762 51.1301C51.4762 38.7055 51.4762 26.2807 51.4762 13.8561C50.9351 14.0554 50.3936 14.2551 49.8522 14.4544C54.8658 19.6946 59.8795 24.9352 64.8928 30.1752C65.6888 31.0072 67.0283 29.8046 66.2379 28.979C61.2243 23.7387 56.2106 18.4981 51.1973 13.2582C50.6425 12.6782 49.5732 13.1617 49.5732 13.8564C49.5732 26.281 49.5732 38.7059 49.5732 51.1304C49.5736 52.2211 51.4762 52.2211 51.4762 51.1301Z" fill="#5092D2"/>
+                        <path d="M49.8526 28.939C53.2266 32.394 56.6006 35.8489 59.9747 39.3035C60.7806 40.1288 62.1204 38.9269 61.3198 38.1073C57.9457 34.6524 54.5717 31.1974 51.1977 27.7429C50.3921 26.9175 49.052 28.1195 49.8526 28.939Z" fill="#5092D2"/>
+                        <path d="M160.304 51.1301C160.304 38.7055 160.304 26.2807 160.304 13.8561C159.763 14.0554 159.222 14.2551 158.68 14.4544C163.694 19.6946 168.708 24.9352 173.721 30.1752C174.517 31.0072 175.856 29.8046 175.066 28.979C170.052 23.7387 165.039 18.4981 160.025 13.2582C159.471 12.6782 158.401 13.1617 158.401 13.8564C158.401 26.281 158.401 38.7059 158.401 51.1304C158.402 52.2211 160.304 52.2211 160.304 51.1301Z" fill="#5092D2"/>
+                        <path d="M158.681 28.939C162.055 32.394 165.429 35.8489 168.803 39.3035C169.609 40.1288 170.949 38.9269 170.148 38.1073C166.774 34.6524 163.4 31.1974 160.026 27.7429C159.22 26.9175 157.88 28.1195 158.681 28.939Z" fill="#5092D2"/>
+                        <path d="M11.9029 51.1268C11.9029 38.702 11.9029 26.2774 11.9029 13.8529C11.4258 14.0965 10.9486 14.3398 10.4715 14.5834C16.1035 17.837 21.7355 21.0913 27.3671 24.3452C27.3671 23.8586 27.3671 23.3713 27.3671 22.8847C22.0601 25.8429 16.753 28.8011 11.4463 31.7596C10.9197 32.0533 10.8219 32.6854 11.2538 33.0885C17.9143 39.3006 24.5753 45.5133 31.2362 51.7254C32.0844 52.5166 33.4276 51.3184 32.5813 50.5292C25.9208 44.3171 19.2598 38.1044 12.5989 31.8923C12.535 32.3352 12.4707 32.7778 12.4064 33.2211C17.7134 30.2626 23.0205 27.3044 28.3272 24.3456C28.9489 23.9991 28.9326 23.2346 28.3272 22.8851C22.6951 19.6308 17.0631 16.3772 11.4315 13.1226C10.8177 12.768 10 13.235 10 13.8532C10 26.2781 10 38.7026 10 51.1272C10.0004 52.2181 11.9029 52.2181 11.9029 51.1268Z" fill="#5092D2"/>
+                        <path d="M193.79 52.142C193.79 39.7171 193.79 27.2926 193.79 14.868C193.313 15.1116 192.835 15.3549 192.358 15.5986C197.99 18.8522 203.622 22.1064 209.254 25.3604C209.254 24.8738 209.254 24.3865 209.254 23.8999C203.947 26.8581 198.64 29.8162 193.333 32.7747C192.806 33.0685 192.709 33.7006 193.141 34.1036C199.801 40.3157 206.462 46.5285 213.123 52.7406C213.971 53.5317 215.314 52.3335 214.468 51.5444C207.807 45.3323 201.147 39.1195 194.486 32.9074C194.422 33.3504 194.357 33.793 194.293 34.2362C199.6 31.2777 204.907 28.3196 210.214 25.3607C210.836 25.0142 210.819 24.2498 210.214 23.9002C204.582 20.6459 198.95 17.3924 193.318 14.1378C192.704 13.7831 191.887 14.2501 191.887 14.8683C191.887 27.2932 191.887 39.7178 191.887 52.1423C191.887 53.2333 193.79 53.2333 193.79 52.142Z" fill="#5092D2"/>
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_224_405" x="0" y="0" width="300" height="62" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dx="1" dy="-2"/>
+                            <feGaussianBlur stdDeviation="5.5"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0.313726 0 0 0 0 0.572549 0 0 0 0 0.823529 0 0 0 1 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_224_405"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_224_405" result="shape"/>
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item d-flex ">
+                        <a class="nav-link d-flex align-items-center active" aria-current="page" href="#">About Project</a>
+                    </li>
+                    <li class="nav-item d-flex ">
+                        <a class="nav-link d-flex align-items-center" href="#">Review</a>
+                    </li>
+                    <li class="nav-item d-flex ">
+                        <a class="nav-link d-flex align-items-center" href="#">Community</a>
+                    </li>
+                    <li class="nav-item d-flex ">
+                        <button class="btn btn-main">
+                            Buy now
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section class="intro container-fluid pt-after-header pb-80 justify-content-end">
+    <div class="intro-bg">
+        <picture class="d-flex">
+            <source type="image/png" media="(min-width: 1921px)"
+                    srcset="./assets/images/picture/intro/intro-bg-2560.png">
+            <source type="image/png" media="(min-width: 1601px)"
+                    srcset="./assets/images/picture/intro/intro-bg-1920.png">
+            <source type="image/png" media="(min-width: 1441px)"
+                    srcset="./assets/images/picture/intro/intro-bg-1600.png">
+            <source type="image/png" media="(min-width: 1280px)"
+                    srcset="./assets/images/picture/intro/intro-bg-1440.png">
+            <source type="image/png" media="(min-width: 1025px)"
+                    srcset="./assets/images/picture/intro/intro-bg-1280.png">
+            <source type="image/png" media="(min-width: 769px)"
+                    srcset="./assets/images/picture/intro/intro-bg-1024.png">
+            <source type="image/png" media="(min-width: 574px)" srcset="./assets/images/picture/intro/intro-bg-768.png">
+            <source type="image/png" media="(min-width: 300px)" srcset="./assets/images/picture/intro/intro-bg-576.png">
+            <img src="./assets/images/picture/intro/intro-bg-1920.png" class="img-fluid img-thumbnail"
+                 alt="Intro image">
+        </picture>
+    </div>
+    <div class="container container-increased h-100 d-flex align-content-xxl-between">
+        <div class="intro__left d-flex-column">
+            <h1 class="intro__title">The greatest heroes from across nine realms,
+                fighting for a future they believe in.</h1>
+            <p class="text-increased">A darker and more primitive world.
+                From the marble and orderly columns of Olympus to the forests, this is a new realm, with its own species
+                of creatures, monsters and gods.</p>
+            <div class="btn-wrapper d-flex mt-5">
+                <button class="btn btn-main">
+                    Buy now
+                </button>
+            </div>
+        </div>
+        <div class="intro__right d-flex-align-bottom">
+            <picture class=" intro__right__image d-flex">
+                <source type="image/png" media="(min-width: 2000px)"
+                        srcset="./assets/images/picture/heroes-2560.png">
+                <source type="image/png" media="(min-width: 769px)"
+                        srcset="./assets/images/picture/heroes.png">
+                <source type="image/png" media="(min-width: 480px)" srcset="./assets/images/picture/heroes-768.png">
+                <source type="image/png" media="(min-width: 300px)" srcset="./assets/images/picture/heroes-440.png">
+                <img src="./assets/images/picture/heroes.png" class="img-fluid img-thumbnail"
+                     alt="Man and his son">
+            </picture>
+        </div>
+    </div>
+    <div class="intro__blur">
+        <picture class="d-flex">
+            <source type="image/png" media="(min-width: 2000px)"
+                    srcset="./assets/images/picture/intro-blur-2560.png">
+            <source type="image/png" media="(min-width: 769px)"
+                    srcset="./assets/images/picture/intro-blur.png">
+            <source type="image/png" media="(min-width: 300px)" srcset="./assets/images/picture/intro-blur-768.png">
+            <img src="./assets/images/picture/intro-blur.png" class="img-fluid img-thumbnail"
+                 alt="Bottom shadow">
+        </picture>
+    </div>
+</section>
+<section class="video pt-100 pb-100 d-flex-column-center">
+    <div class="intro-bg video-bg">
+        <picture class="d-flex">
+            <img src="./assets/images/picture/video-bg.jpg" class="img-fluid img-thumbnail"
+                 alt="Intro image">
+        </picture>
+    </div>
+    <div class="container h-100 d-flex-column-center justify-content-center">
+        <h2 class="video__title text-center">
+            Embark on an epic and heartfelt journey as Kratos and Atreus struggle with holding on and letting go
+        </h2>
+        <div class="video__content">
+            <video class="video-control"
+                   controls
+                   width="30vw" height="30vh"
+                   poster="assets/images/picture/video-poster.jpg">
+                <source src="./assets/video/trailer.mp4"
+                        type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+
+<section id="buy-god-of-war" class="shop pt-100 pb-100 container">
+    <h2 class="text-center">Buy God of War Ragnarök</h2>
+
+    <div class="shop__items pt-30 w-25">
+        <div class="shop__item">
+            <picture class="d-flex">
+                <img src="./assets/images/picture/launch-edition.jpg" class="img-fluid img-thumbnail"
+                     alt="Launch Edition image">
+            </picture>
+            <h4>God ofWar Ragnarok</h4>
+            <p>The standard edition comes with Kratos Risen Snow Armor and Atreus Risen Snow Tunic as a preorder bonus.</p>
+            <div class="shop__item__price d-flex align-items-center">
+                <button class="btn btn-main">
+                    Buy now
+                </button>
+                <span class="price h3"> $69.99 </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer pt-80 pb-60">
+    <div class="container d-flex justify-content-between align-items-start pb-30">
+        <ul class="footer__item w-25 footer__info p-2 mt-3">
+            <li>
+                <h4>Game Info</h4>
+            </li>
+            <li class="mb-3">
+                <span>Platform:</span> <span> PS4, PS5</span>
+            </li>
+            <li class="mb-3">
+                <span>Release:</span> <span> 9/11/2022</span>
+            </li>
+            <li class="mb-3">
+                <span>Publisher:</span> <span> Sony Interactive Entertainment Europe </span>
+            </li>
+            <li class="mb-3">
+                <span>Genre:</span> <span> Action</span>
+            </li>
+        </ul>
+        <ul class="footer__item footer__contacts w-25 p-2 mt-3">
+            <li>
+                <h4>Contacts</h4>
+            </li>
+            <li class="mb-3">
+                13031 W Jefferson Blvd
+                <br>
+                Ste 600
+                <br>
+                Los Angeles, CA 90404
+                <br>
+                Playa Vista
+            </li>
+            <li class="mb-3">
+                <p>Follow Us :</p>
+            </li>
+            <li class="d-flex footer__socials mb-3">
+                <a href="./" class="icon icon-facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="25px" height="25px">
+                        <path d="M 25 3 C 12.861562 3 3 12.861562 3 25 C 3 36.019135 11.127533 45.138355 21.712891 46.728516 L 22.861328 46.902344 L 22.861328 29.566406 L 17.664062 29.566406 L 17.664062 26.046875 L 22.861328 26.046875 L
+                         22.861328 21.373047 C 22.861328 18.494965 23.551973 16.599417 24.695312 15.410156 C 25.838652 14.220896 27.528004 13.621094 29.878906 13.621094 C
+                          31.758714 13.621094 32.490022 13.734993 33.185547 13.820312 L 33.185547 16.701172 L 30.738281 16.701172 C 29.349697 16.701172 28.210449 17.475903
+                           27.619141 18.507812 C 27.027832 19.539724 26.84375 20.771816 26.84375 22.027344 L 26.84375 26.044922 L 32.966797 26.044922 L 32.421875 29.564453 L
+                            26.84375 29.564453 L 26.84375 46.929688 L 27.978516 46.775391 C 38.71434 45.319366 47 36.126845 47 25 C 47 12.861562 37.138438 3 25 3 z M 25 5 C 36.057562
+                             5 45 13.942438 45 25 C 45 34.729791 38.035799 42.731796 28.84375 44.533203 L 28.84375 31.564453 L 34.136719 31.564453 L 35.298828 24.044922 L 28.84375 24.044922 L 28.84375 22.027344 C 28.84375 20.989871 29.033574 20.060293 29.353516 19.501953 C
+                              29.673457 18.943614 29.981865 18.701172 30.738281 18.701172 L 35.185547 18.701172 L 35.185547 12.009766 L 34.318359 11.892578 C 33.718567 11.811418 32.349197 11.621094 29.878906 11.621094 C 27.175808 11.621094 24.855567 12.357448 23.253906 14.023438 C
+                               21.652246 15.689426 20.861328 18.170128 20.861328 21.373047 L 20.861328 24.046875 L 15.664062 24.046875 L 15.664062 31.566406 L 20.861328 31.566406 L 20.861328 44.470703 C 11.816995 42.554813 5 34.624447 5 25 C 5 13.942438 13.942438 5 25 5 z"/>
+                    </svg>
+                </a>
+                <a href="./" class="icon icon-instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="25px" height="25px">
+                        <path d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"/>
+                    </svg>
+                </a>
+                <a href="./" class="icon icon-youtube">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="35px">
+                        <path d="M 24.402344 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.402344 16.898438 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.902344 40.5 17.898438 41 24.5 41 C 31.101563 41 37.097656 40.5 40.597656 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.097656 35.5 C 45.5 33 46 29.402344 46.097656 24.902344 C 46.097656 20.402344 45.597656 16.800781 45.097656 14.300781 C 44.699219 12.101563 42.800781 10.5 40.597656 10 C 37.097656 9.5 31 9 24.402344 9 Z M 24.402344 11 C 31.601563 11 37.398438 11.597656 40.199219 12.097656 C 41.699219 12.5 42.898438 13.5 43.097656 14.800781 C 43.699219 18 44.097656 21.402344 44.097656 24.902344 C 44 29.199219 43.5 32.699219 43.097656 35.199219 C 42.800781 37.097656 40.800781 37.699219 40.199219 37.902344 C 36.597656 38.601563 30.597656 39.097656 24.597656 39.097656 C 18.597656 39.097656 12.5 38.699219 9 37.902344 C 7.5 37.5 6.300781 36.5 6.101563 35.199219 C 5.300781 32.398438 5 28.699219 5 25 C 5 20.398438 5.402344 17 5.800781 14.902344 C 6.101563 13 8.199219 12.398438 8.699219 12.199219 C 12 11.5 18.101563 11 24.402344 11 Z M 19 17 L 19 33 L 33 25 Z M 21 20.402344 L 29 25 L 21 29.597656 Z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <ul class="footer__item footer__requirement w-25 p-2">
+            <li><h4> Requirement</h4></li>
+            <li class="text mb-3">
+                To play this game on PS5, your system may need to be updated to the latest system software. Although
+                this
+                game is playable on PS5, some features available on PS4 may be absent. See PlayStation.com/bc for more
+                details.
+            </li>
+        </ul>
+        <div class="footer__item footer__image d-flex w-25 p-2">
+            <img src="./assets/images/picture/mimir.png" alt="Mimir's head">
+        </div>
+    </div>
+    <h4 class="footer__trademark container pt-3 text-center">
+        ©2022 Sony Interactive Entertainment LLC. God of War is a registered trademark of Sony Interactive Entertainment
+        LLC and related companies in the U.S. and other countries. “PlayStation Family Mark”, “PlayStation”,
+        “PlayStation Studios logo”, "PS4", and “PS5” are registered trademarks or trademarks of Sony Interactive
+        Entertainment Inc.
+    </h4>
+</footer>
+
+<script src="./assets/libs/bootstrap5/bootstrap.bundle.min.js"></script>
 <script src="./assets/js/scripts.min.js"></script>
 </body>
 </html>
