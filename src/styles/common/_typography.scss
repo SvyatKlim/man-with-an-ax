@@ -51,6 +51,13 @@ h4, .h4 {
   display: flex;
   margin-bottom: 20px;
 }
+h5, .h5 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.54;
+  display: flex;
+  margin-bottom: 20px;
+}
 
 a {
   text-decoration: none;
@@ -75,6 +82,63 @@ a {
 .text-center {
   text-align: center;
 }
+.content{
+  font-family: $inter;
+  h5,.h5{
+    font-family: $cinzel;
+  }
+  ul {
+    padding: 10px 16px;
+    max-width: 720px;
+
+    li {
+      padding-left: 16px;
+      position: relative;
+      margin-bottom: 3px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        transform-origin: top;
+        top: 9px;
+        left: 0;
+        border-radius: 50%;
+        background-color: $white;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    ~ p {
+      margin-top: 0;
+    }
+  }
+
+  ol {
+    padding: 40px 0 40px 34px;
+    margin: 0;
+
+    li {
+      position: relative;
+      margin-bottom: 3px;
+      padding-left: 8px;
+    }
+  }
+
+  ol:last-child, ul:last-child {
+    padding-bottom: 0;
+
+    ~ p {
+      padding-top: 40px;
+    }
+  }
+
+}
+
 
 @media screen and (max-width: 1250px) {
 }

@@ -8,10 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/vendor/normalize.min.css">
     <link rel="stylesheet" href="./assets/libs/bootstrap5/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/styles.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -24,7 +22,7 @@
     <!--            <img src="" alt="">-->
     <!--        </div>-->
     <!--    </div>-->
-    <nav class="navbar navbar-expand-lg header__nav" aria-label="Main navigation">
+    <nav class="navbar navbar-dark navbar-expand-lg header__nav" aria-label="Main navigation">
         <div class="container-fluid d-lg-flex justify-content-between">
             <a class="navbar-brand d-flex" href="./">
                 <img src="./assets/images/picture/god-of-war-logo.png" alt="Logo">
@@ -34,7 +32,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="header__nav__decor d-flex">
+            <div class="header__nav__decor d-xl-flex d-none">
                 <svg width="300" height="62" viewBox="0 0 300 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d_224_405)">
                         <path d="M286.186 13.3761C281.054 19.9046 275.921 26.4335 270.789 32.962C270.524 33.2984 270.688 33.7014 270.938 33.987C276.07 39.8726 281.202 45.7578 286.335 51.643C287.086 52.5046 288.422 51.2976 287.68 50.4468C282.548 44.5613 277.415 38.676 272.283 32.7908C272.332 33.1326 272.382 33.4743 272.432 33.8158C277.564 27.2873 282.696 20.7584 287.829 14.2299C288.534 13.3335 286.883 12.4892 286.186 13.3761Z" fill="#5092D2"/>
@@ -169,26 +167,530 @@
     </div>
 </section>
 
-<section id="buy-god-of-war" class="shop pt-100 pb-100 container">
+<section id="buy-god-of-war" class="shop pt-100 pb-100">
+    <div class="intro-bg">
+        <picture class="d-flex">
+            <source type="image/png" media="(min-width: 2000px)"
+                    srcset="./assets/images/picture/shop/shop-bg-2560.jpg">
+            <source type="image/png" media="(min-width: 1601px)"
+                    srcset="./assets/images/picture/shop/shop-bg-1920.jpg">
+            <source type="image/png" media="(min-width: 1441px)"
+                    srcset="./assets/images/picture/shop/shop-bg-1600.jpg">
+            <source type="image/png" media="(min-width: 1441px)"
+                    srcset="./assets/images/picture/shop/shop-bg-1280.jpg">
+            <source type="image/png" media="(min-width: 1441px)"
+                    srcset="./assets/images/picture/shop/shop-bg-768.jpg">
+            <img src="./assets/images/picture/shop/shop-bg-1920.jpg" class="img-fluid img-thumbnail"
+                 alt="Shop Background image">
+        </picture>
+    </div>
+    <div class="container">
     <h2 class="text-center">Buy God of War Ragnarök</h2>
 
-    <div class="shop__items pt-30 w-25">
-        <div class="shop__item">
-            <picture class="d-flex">
-                <img src="./assets/images/picture/launch-edition.jpg" class="img-fluid img-thumbnail"
-                     alt="Launch Edition image">
-            </picture>
-            <h4>God ofWar Ragnarok</h4>
-            <p>The standard edition comes with Kratos Risen Snow Armor and Atreus Risen Snow Tunic as a preorder bonus.</p>
-            <div class="shop__item__price d-flex align-items-center">
-                <button class="btn btn-main">
-                    Buy now
-                </button>
-                <span class="price h3"> $69.99 </span>
+    <div class="shop__items pt-30 row">
+        <div class="shop__item__wrapper col-6 p-3">
+    <div class="shop__item col h-100 d-flex-column p-4">
+        <picture class="d-flex mb-5 shop__item__img ">
+            <img src=./assets/images/picture/launch-edition.jpg class="img-fluid img-thumbnail"
+                 alt="God of War Ragnarok ">
+        </picture>
+        <h4>God of War Ragnarok </h4>
+        <div class="mb-5 content"><p>The standard edition comes with Kratos Risen Snow Armor and Atreus Risen Snow Tunic as a preorder bonus.</p> </div>
+        <div class="shop__item__price d-flex align-items-center justify-content-between mt-auto">
+            <span class="price h3"> $69.99 </span>
+            <button class="btn btn-main">
+                Buy now
+            </button>
+        </div>
+    </div>
+</div>
+
+        <div class="shop__item__wrapper col-6 p-3">
+    <div class="shop__item col h-100 d-flex-column p-4">
+        <picture class="d-flex mb-5 shop__item__img ">
+            <img src=./assets/images/picture/digital-deluxe-edition.jpg class="img-fluid img-thumbnail"
+                 alt="God of War Ragnarok Digital Deluxe Edition">
+        </picture>
+        <h4>God of War Ragnarok Digital Deluxe Edition</h4>
+        <div class="mb-5 content"><h5>The PS5-only digital deluxe edition includes the following digital items:</h5><ul><li>Kratos Darkdale Armor</li><li>Atreus Darkdale Attire (cosmetic)</li><li>Darkdale Blades Handles for the Blades of Chaos</li><li>Darkdale Axe Grip for the Leviathan Axe</li><li>Official God of War Ragnarök Digital Soundtrack </li><li>Dark Horse Digital Mini Artbook </li><li>Avatar Set </li><li>PlayStation 4 Theme</li></ul></div>
+        <div class="shop__item__price d-flex align-items-center justify-content-between mt-auto">
+            <span class="price h3"> $79.99 </span>
+            <button class="btn btn-main">
+                Buy now
+            </button>
+        </div>
+    </div>
+</div>
+
+        <div class="shop__item__wrapper col-6 p-3">
+    <div class="shop__item col h-100 d-flex-column p-4">
+        <picture class="d-flex mb-5 shop__item__img ">
+            <img src=./assets/images/picture/collectors-edition.jpg class="img-fluid img-thumbnail"
+                 alt="God of War Ragnarok Collector’s Edition ">
+        </picture>
+        <h4>God of War Ragnarok Collector’s Edition </h4>
+        <div class="mb-5 content"><h5 >The collector’s edition includes the following items</h5><ul><li>Printed voucher code for the full God of War Ragnarök game on PlayStation 4 and PlayStation 5 consoles </li><li>A Steelbook Display Case (no game disc included) – The God of War Ragnarök Steelbook Display Case depicts renditions of the Bear and the Wolf</li><li>2” Vanir Twins Carvings – In the same style as Atreus’ wooden toy carvings of the Huldra Brothers from the God of War (2018) Collector’s Edition, the God of War Ragnarök Collector’s Edition completes the set with carvings of the Vanir Twins</li><li>Dwarven Dice Set – This set comes with a set of dice with a quality wood-like finish in a dice bag with a symbol of Yggdrasil on the outside. </li><li>16” Mjölnir Replica – A highly detailed replica of Thor’s signature weapon from God of War Ragnarök. </li></ul> </div>
+        <div class="shop__item__price d-flex align-items-center justify-content-between mt-auto">
+            <span class="price h3"> $199.99 </span>
+            <button class="btn btn-main">
+                Buy now
+            </button>
+        </div>
+    </div>
+</div>
+
+        <div class="shop__item__wrapper col-6 p-3">
+    <div class="shop__item col h-100 d-flex-column p-4">
+        <picture class="d-flex mb-5 shop__item__img ">
+            <img src=./assets/images/picture/jotnar-edition.jpg class="img-fluid img-thumbnail"
+                 alt="God of War Ragnarok Jotnar Edition ">
+        </picture>
+        <h4>God of War Ragnarok Jotnar Edition </h4>
+        <div class="mb-5 content"><h5>The Jotnar edition costs $259.99 and includes the following:</h5><ul><li>Printed voucher code for the full God of War Ragnarök game on PlayStation 4 and PlayStation 5 consoles</li><li>7-Inch Vinyl Record with music by Bear McCreary – This includes two tracks from composer Bear McCreary</li><li>The Falcon, Bear, and Wolf Pin Set – Representing Faye, Kratos, and Atreus respectively, this pin set symbolizes our heroes’ family</li><li>The Legendary Draupnir Ring – A ring from Norse Mythology, the Legendary Draupnir Ring comes in a red cloth bag</li><li>Brok’s Dice Set – This dice set comes with a metallic silver finish with blue detailing. The dice bag features the Huldra Brothers’ brand</li><li>Yggdrasil Cloth Map – This cloth map shows each of the Nine Realms within the branches and roots of Yggdrasil</li><li>A Steelbook Display Case (no game disc included)</li><li>2” Vanir Twins Carvings </li><li>16” Mjölnir Replica </li></ul></div>
+        <div class="shop__item__price d-flex align-items-center justify-content-between mt-auto">
+            <span class="price h3"> $259.99 </span>
+            <button class="btn btn-main">
+                Buy now
+            </button>
+        </div>
+    </div>
+</div>
+    </div>
+    </div>
+</section>
+
+<!--Gallery - https://codepen.io/jackcohle/pen/dyoyzyX.-->
+<!--Author https://codepen.io/jackcohle.-->
+
+<section class="gallery-wrapper pt-80 pb-80">
+        <div class="content">
+            <div class="gallery-full">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+    <div class="image">
+        <img src=./assets/images/picture/art/art-0.jpg alt="Thumbnail Gallery " />
+    </div>
+
+    <div class="overlay">
+        <div class="text-wrap">
+            <div class="name">
+                <span>Thumbnail Gallery </span>
+            </div>
+            <div class="caption">
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi aliquam eius, blanditiis quae, explicabo praesentium corporis tempora quam et rem nulla repellendus placeat, nisi omnis earum sunt suscipit aspernatur! 
+                </p>
             </div>
         </div>
     </div>
+</div>
+
+                        <div class="swiper-slide">
+    <div class="image">
+        <img src=./assets/images/picture/art/art-1.jpg alt="Thumbnail Gallery " />
+    </div>
+
+    <div class="overlay">
+        <div class="text-wrap">
+            <div class="name">
+                <span>Thumbnail Gallery </span>
+            </div>
+            <div class="caption">
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi aliquam eius, blanditiis quae, explicabo praesentium corporis tempora quam et rem nulla repellendus placeat, nisi omnis earum sunt suscipit aspernatur! 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <div class="swiper-slide">
+    <div class="image">
+        <img src=./assets/images/picture/art/art-2.jpg alt="Thumbnail Gallery " />
+    </div>
+
+    <div class="overlay">
+        <div class="text-wrap">
+            <div class="name">
+                <span>Thumbnail Gallery </span>
+            </div>
+            <div class="caption">
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi aliquam eius, blanditiis quae, explicabo praesentium corporis tempora quam et rem nulla repellendus placeat, nisi omnis earum sunt suscipit aspernatur! 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <div class="swiper-slide">
+    <div class="image">
+        <img src=./assets/images/picture/art/art-3.jpg alt="Thumbnail Gallery " />
+    </div>
+
+    <div class="overlay">
+        <div class="text-wrap">
+            <div class="name">
+                <span>Thumbnail Gallery </span>
+            </div>
+            <div class="caption">
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi aliquam eius, blanditiis quae, explicabo praesentium corporis tempora quam et rem nulla repellendus placeat, nisi omnis earum sunt suscipit aspernatur! 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <div class="swiper-slide">
+    <div class="image">
+        <img src=./assets/images/picture/art/art-4.jpg alt="Thumbnail Gallery " />
+    </div>
+
+    <div class="overlay">
+        <div class="text-wrap">
+            <div class="name">
+                <span>Thumbnail Gallery </span>
+            </div>
+            <div class="caption">
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi aliquam eius, blanditiis quae, explicabo praesentium corporis tempora quam et rem nulla repellendus placeat, nisi omnis earum sunt suscipit aspernatur! 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <div class="swiper-slide">
+    <div class="image">
+        <img src=./assets/images/picture/art/art-5.jpg alt="Thumbnail Gallery " />
+    </div>
+
+    <div class="overlay">
+        <div class="text-wrap">
+            <div class="name">
+                <span>Thumbnail Gallery </span>
+            </div>
+            <div class="caption">
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi aliquam eius, blanditiis quae, explicabo praesentium corporis tempora quam et rem nulla repellendus placeat, nisi omnis earum sunt suscipit aspernatur! 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <div class="swiper-slide">
+    <div class="image">
+        <img src=./assets/images/picture/art/art-6.jpg alt="Thumbnail Gallery " />
+    </div>
+
+    <div class="overlay">
+        <div class="text-wrap">
+            <div class="name">
+                <span>Thumbnail Gallery </span>
+            </div>
+            <div class="caption">
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi aliquam eius, blanditiis quae, explicabo praesentium corporis tempora quam et rem nulla repellendus placeat, nisi omnis earum sunt suscipit aspernatur! 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <div class="swiper-slide">
+    <div class="image">
+        <img src=./assets/images/picture/art/art-7.jpg alt="Thumbnail Gallery " />
+    </div>
+
+    <div class="overlay">
+        <div class="text-wrap">
+            <div class="name">
+                <span>Thumbnail Gallery </span>
+            </div>
+            <div class="caption">
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi aliquam eius, blanditiis quae, explicabo praesentium corporis tempora quam et rem nulla repellendus placeat, nisi omnis earum sunt suscipit aspernatur! 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <div class="swiper-slide">
+    <div class="image">
+        <img src=./assets/images/picture/art/art-8.jpg alt="Thumbnail Gallery " />
+    </div>
+
+    <div class="overlay">
+        <div class="text-wrap">
+            <div class="name">
+                <span>Thumbnail Gallery </span>
+            </div>
+            <div class="caption">
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi aliquam eius, blanditiis quae, explicabo praesentium corporis tempora quam et rem nulla repellendus placeat, nisi omnis earum sunt suscipit aspernatur! 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <div class="swiper-slide">
+    <div class="image">
+        <img src=./assets/images/picture/art/art-9.jpg alt="Thumbnail Gallery " />
+    </div>
+
+    <div class="overlay">
+        <div class="text-wrap">
+            <div class="name">
+                <span>Thumbnail Gallery </span>
+            </div>
+            <div class="caption">
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi aliquam eius, blanditiis quae, explicabo praesentium corporis tempora quam et rem nulla repellendus placeat, nisi omnis earum sunt suscipit aspernatur! 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <div class="swiper-slide">
+    <div class="image">
+        <img src=./assets/images/picture/art/art-10.jpg alt="Thumbnail Gallery " />
+    </div>
+
+    <div class="overlay">
+        <div class="text-wrap">
+            <div class="name">
+                <span>Thumbnail Gallery </span>
+            </div>
+            <div class="caption">
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi aliquam eius, blanditiis quae, explicabo praesentium corporis tempora quam et rem nulla repellendus placeat, nisi omnis earum sunt suscipit aspernatur! 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+
+                <div class="swiper-next-button">
+                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="27" cy="27" r="27" fill="white"/>
+                        <path d="M25 19L33.4853 27.4853L25 35.9706" stroke="black" stroke-width="3" stroke-linecap="square"/>
+                    </svg>
+
+                </div>
+                <div class="swiper-prev-button" >
+                    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="27" cy="27" r="27" fill="white"/>
+                        <path d="M25 19L33.4853 27.4853L25 35.9706" stroke="black" stroke-width="3" stroke-linecap="square"/>
+                    </svg>
+
+                </div>
+            </div>
+
+            <div class="gallery-thumb">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper justify-content-center">
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./assets/images/picture/art/thumbnails/art-0.jpg" alt="" />
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./assets/images/picture/art/thumbnails/art-1.jpg" alt="" />
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./assets/images/picture/art/thumbnails/art-2.jpg" alt="" />
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./assets/images/picture/art/thumbnails/art-3.jpg" alt="" />
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./assets/images/picture/art/thumbnails/art-4.jpg" alt="" />
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./assets/images/picture/art/thumbnails/art-5.jpg" alt="" />
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./assets/images/picture/art/thumbnails/art-6.jpg" alt="" />
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./assets/images/picture/art/thumbnails/art-7.jpg" alt="" />
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./assets/images/picture/art/thumbnails/art-8.jpg" alt="" />
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./assets/images/picture/art/thumbnails/art-9.jpg" alt="" />
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="image">
+                                <img src="./assets/images/picture/art/thumbnails/art-10.jpg" alt="" />
+                                <div class="overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-next-button">
+                    <svg width="24" height="24" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="27" cy="27" r="27" fill="white"/>
+                        <path d="M25 19L33.4853 27.4853L25 35.9706" stroke="black" stroke-width="3" stroke-linecap="square"/>
+                    </svg>
+                </div>
+                <div class="swiper-prev-button">
+                    <svg width="24" height="24" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="27" cy="27" r="27" fill="white"/>
+                        <path d="M25 19L33.4853 27.4853L25 35.9706" stroke="black" stroke-width="3" stroke-linecap="square"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
 </section>
+
+<section class="testimonials col align-items-center pt-100 pb-100">
+    <div class="intro-bg">
+        <picture class="d-flex">
+            <img src="./assets/images/picture/testimonials-background.jpg" class="img-fluid img-thumbnail"
+                 alt="Shop Background image">
+        </picture>
+    </div>
+    <div class="container h-100 ">
+        <h2 class="mb-5 text-center">Reviews</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="testimonials__item swiper-slide d-flex-column-center">
+                    <div class="testimonials__item__image d-flex">
+                        <img src="./assets/images/picture/profile/Angrboda.jpg" alt="Angrboda">
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2 d-flex-column-center">
+                        <h5 class="mb-3 text-center">Angrboda</h5>
+                        <blockquote>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. !</p></blockquote>
+                    </div>
+                </div>
+                <div class="testimonials__item swiper-slide d-flex-column-center">
+                    <div class="testimonials__item__image d-flex">
+                        <img src="./assets/images/picture/profile/Atreus.jpg" alt="Atreus">
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2 d-flex-column-center">
+                        <h5 class="mb-3 text-center">Atreus</h5>
+                        <blockquote>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. !</p></blockquote>
+                    </div>
+                </div>
+                <div class="testimonials__item swiper-slide d-flex-column-center">
+                    <div class="testimonials__item__image d-flex">
+                        <img src="./assets/images/picture/profile/Durlin.jpg" alt="Durlin">
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2 d-flex-column-center">
+                        <h5 class="mb-3 text-center">Durlin</h5>
+                        <blockquote>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. !</p></blockquote>
+                    </div>
+                </div>
+                <div class="testimonials__item swiper-slide d-flex-column-center">
+                    <div class="testimonials__item__image d-flex">
+                        <img src="./assets/images/picture/profile/Freya.jpg" alt="Freya">
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2 d-flex-column-center">
+                        <h5 class="mb-3 text-center">Freya</h5>
+                        <blockquote>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. !</p></blockquote>
+                    </div>
+                </div>
+                <div class="testimonials__item swiper-slide d-flex-column-center">
+                    <div class="testimonials__item__image d-flex">
+                        <img src="./assets/images/picture/profile/Kratos.jpg" alt="Kratos">
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2 d-flex-column-center">
+                        <h5 class="mb-3 text-center">Kratos</h5>
+                        <blockquote>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. !</p></blockquote>
+                    </div>
+                </div>
+                <div class="testimonials__item swiper-slide d-flex-column-center">
+                    <div class="testimonials__item__image d-flex">
+                        <img src="./assets/images/picture/profile/Mimir.jpg" alt="Mimir">
+                    </div>
+                    <div class="col-sm-8 col-sm-offset-2 d-flex-column-center">
+                        <h5 class="mb-3 text-center">Mimir</h5>
+                        <blockquote>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. !</p></blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+
 
 <footer class="footer pt-80 pb-60">
     <div class="container d-flex justify-content-between align-items-start pb-30">
@@ -271,7 +773,17 @@
     </h4>
 </footer>
 
+<!--loader thx:https://codepen.io/aurer/pen/jEGbA-->
+<div class="loader">
+    <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+        <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+            <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"/>
+        </path>
+     </svg>
+</div>
+
 <script src="./assets/libs/bootstrap5/bootstrap.bundle.min.js"></script>
+<script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
 <script src="./assets/js/scripts.min.js"></script>
 </body>
 </html>
