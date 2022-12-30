@@ -1,54 +1,69 @@
 .intro {
+  display: flex;
+  height: 100vh;
+  max-height: 1440px;
+  width: 100vw;
+  flex-direction: column;
+  overflow: hidden;
+  &-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+
   &__left {
     width: 50%;
-    max-width: 580px;
-
-    &__text {
-      margin-bottom: 35px;
-    }
+    max-width: 700px;
   }
 
   &__right {
     width: 50%;
-    display: flex;
-    justify-content: right;
+
     &__image {
-      max-width: 510px;
-      max-height: 300px;
+      max-height: 900px;
+      max-width: 1000px;
     }
   }
 
-  &__tags {
-    margin-top: 24px;
+  &__blur {
+    position: absolute;
+    z-index: 2;
+    bottom: -5%;
+    left: -1%;
   }
-  @media screen and (max-width: 1024px){
-    &__right {
-      &__image{
-        img{
-          object-fit: contain ;
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 576px){
-    &__wrapper{
+
+  @media screen and (min-width: 1600px) and (max-width: 1920px) and (min-height: 1040px) {
+    .container-increased {
       flex-direction: column;
     }
-    &__left{
-      order: 2;
-      width: 100%;
+    &__right, &__left {
+      width: auto;
     }
     &__right {
-      order: 1;
-      width: 100%;
-      justify-content: center;
-      margin-bottom: 40px;
-      &__image{
-        max-width: 400px;
-        img{
-          object-fit: contain ;
-        }
+      margin-top: -100px;
+
+      &__image {
+        margin: 0 0 0 auto;
       }
     }
+  }
+
+  @media screen and (min-width: 1921px) and (min-height: 1100px) {
+    .container-increased {
+      flex-direction: row;
+    }
+    &__right, &__left {
+      width: auto;
+    }
+  }
+  @media screen and (max-width: 1920px) and (max-height: 1024px) {
+    padding-bottom: 60px;
+    &__blur {
+      bottom: -10%;
+    }
+
   }
 }

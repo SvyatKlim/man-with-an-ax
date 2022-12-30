@@ -1,0 +1,23 @@
+.video {
+  width: 100vw;
+  height: 100vh;
+
+  &-control {
+    margin-top: 6vh;
+    display: flex;
+    min-width: 50vw;
+    min-height: 50vh;
+  }
+
+  &-bg {
+    &:after {
+      content: '';
+      background: linear-gradient(180deg,#17171a 0,rgba(22,22,26,.3) 36%,rgba(22,22,26,.1) 60%,rgba(22,22,26,0) 100%);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+}

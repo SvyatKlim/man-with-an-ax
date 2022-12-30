@@ -1,0 +1,23 @@
+.shop {
+  &__item {
+    background-color: rgba($card-bg,0.8);
+    will-change: scale;
+    &__img {
+      max-height: 406px;
+      overflow: hidden;
+
+      img {
+        will-change: scale;
+        transition: transform 1s ease-out;
+      }
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        .shop__item__img img {
+          transform: scale3d(1.05, 1.05, 1.05);
+        }
+      }
+    }
+  }
+}
